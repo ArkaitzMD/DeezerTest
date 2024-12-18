@@ -1,0 +1,23 @@
+/* Scrollbar en navegadores basados en WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+  height: 8px; /* Altura del scrollbar (horizontal, si aplica) */
+}
+
+/* Fondo del scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Barra del scroll */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color de la barra */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: background 0.3s ease;
+}
+
+/* Efecto hover en la barra del scroll */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color más oscuro al hacer hover */
+}

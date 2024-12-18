@@ -1,0 +1,23 @@
+.rhap_play-pause-button {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.rhap_play-pause-button:hover {
+    color: whitesmoke;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+}
+
+.rhap_progress-indicator {
+    background-color: red;
+}
+.rhap_progress-filled{
+    background-color: red;
+}
+
+.rhap_volume-container{
+    transform: translateY(-30px);
+    transform: translateX(120px);
+}
+

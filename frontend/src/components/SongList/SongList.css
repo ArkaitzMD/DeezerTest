@@ -1,0 +1,88 @@
+
+.list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.list-container {
+    padding: 20px;
+}
+  
+.search-title {
+    margin-bottom: 0px;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+  
+.search-title span {
+    color: #000;
+    font-weight: 900;
+
+}
+
+.no-songs-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #555;
+}
+  
+.no-songs-container h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+  
+.no-songs-container p {
+    font-size: 1.2rem;
+    color: #777;
+}
+  
+.no-results-icon {
+    font-size: 5rem;
+    color: #e0e0e0;
+    margin-top: 20px;
+}
+
+.loading-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #555;
+}
+  
+.loading-container h2 {
+    font-size: 2rem;
+    color: #333;
+}
+  
+.loading-container p {
+    font-size: 1.2rem;
+    color: #777;
+}
+  
+.spinner {
+    margin: 0 auto 20px;
+    width: 50px;
+    height: 50px;
+    border: 6px solid #e0e0e0;
+    border-top-color: #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+  
+/* Animación del spinner */
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
+  
+  

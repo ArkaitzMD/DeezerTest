@@ -1,0 +1,47 @@
+services:
+  backend:
+    build: ./backend
+    container_name: django-backend
+    command: >
+      sh -c "python manage.py makemigrations &&
+             python manage.py migrate &&
+             gunicorn DeezerTest.wsgi:application --bind 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    environment:
+      - RUNNING_IN_DOCKER=1
+    env_file:
+      - ./backend/.env.docker
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - db
+
+  frontend:
+    build: ./frontend
+    container_name: react-frontend
+    command: >
+      sh -c "npm run build &&
+             npx vite preview --host 0.0.0.0" --port 4173
+    ports:
+      - "4173:4173"
+    volumes:
+      - ./frontend:/frontend
+      - /frontend/node_modules
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:15
+    container_name: postgres-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: deezertest_db_docker
+      POSTGRES_USER: tuUsuario
+      POSTGRES_PASSWORD: tuPassword
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

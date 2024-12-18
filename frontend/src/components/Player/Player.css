@@ -1,0 +1,53 @@
+.player-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    z-index: 100;
+    overflow: auto;
+  }
+  
+  .player-info {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    white-space: nowrap; /* Evita salto de línea */
+    overflow: hidden; /* Oculta contenido extra */
+    
+  }
+  
+  .player-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .player-info h4{
+    font-size: 18px;
+    font-weight: bold;
+    display: block; /* Asegura que se comporte como un bloque */
+    max-width: 100%; /* Define un ancho máximo para el texto */
+    word-wrap: break-word; /* Permite el ajuste de palabras si exceden el ancho */
+    overflow-wrap: break-word; /* Alternativa para asegurar ajuste de palabras */
+    white-space: normal; /* Permite los saltos de línea automáticos */
+    line-height: 1.4; /* Espaciado entre líneas */
+
+  }
+  .player-info p {
+    font-size: 16px;
+  }
+  
+  .rhap_container {
+
+    justify-self: center;
+    background: none;
+    box-shadow: none;
+    margin-right: 20%;
+  }
+  

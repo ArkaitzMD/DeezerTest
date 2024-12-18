@@ -1,0 +1,108 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    padding-left: 30px;
+}
+  
+header .logo img {
+    width: 150px;
+    margin-right: 8px;
+}
+  
+form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 50px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+form .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #333;
+    padding: 5px;
+
+}
+
+
+form .search-input:hover {
+    color: black;
+}
+  
+
+form input::placeholder {
+    color: #aaa;
+}
+  
+form button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    color: #888;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+  
+form button:hover {
+    color: #333;
+}
+  
+header nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0 20px;
+}
+  
+header nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+  
+header nav a:hover,
+header nav a.active {
+    color: #ff4b5c;
+}
+  
+header .profile {
+    display: flex;
+    align-items: center;
+}
+  
+header .profile img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+  
